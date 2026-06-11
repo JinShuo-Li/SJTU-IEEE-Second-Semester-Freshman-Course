@@ -119,3 +119,12 @@ An advanced linear algebra course tailored for AI applications, covering linear 
 - **C++ assignments** can be compiled with any C++ compiler (e.g., `g++`). Use the provided `judger.py` / `judger_batch.py` scripts to auto-test solutions against the supplied test data.
 - **LaTeX documents** (Digital Circuits, Linear Algebra notes, QR report) should be compiled with XeLaTeX or pdfLaTeX as appropriate.
 - **MatLibrary** requires Python 3.10+. See `MATH1409_Linear_Algebra_for_Artificial_Intelligence/program_solution/README.md` for full documentation.
+
+---
+
+## Disclaimer
+
+These materials are shared for educational and portfolio purposes.
+
+* **Notes:** Feel free to use these for your own revision.
+* **Code:** Please respect academic integrity. These projects represent my own work during the course and should not be plagiarized for similar assignments.
