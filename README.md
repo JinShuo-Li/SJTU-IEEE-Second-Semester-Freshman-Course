@@ -2,7 +2,7 @@
 
 This repository contains all the notes, assignments, and materials from the second semester of my freshman year in the IEEE program at Shanghai Jiao Tong University (SJTU).
 
-**Author:** Li Jinshuo (李谨硕)
+**Author:** Li Jinshuo
 
 **License:** [MIT](LICENSE)
 
