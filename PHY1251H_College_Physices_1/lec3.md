@@ -9,7 +9,6 @@
 1. **重力**:
 
 $$ A =\int_{a}^{b} \vec{F} \cdot d\vec{r} = \int_a^b - mg \vec{k} \cdot d\vec{r} = -mg(z_b - z_a) $$
-$$
 
 显然, 重力做功与路径无关, 只与初末位置有关.
 
