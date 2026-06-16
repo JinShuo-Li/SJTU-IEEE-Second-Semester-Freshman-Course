@@ -17,6 +17,7 @@ This repository contains all the notes, assignments, and materials from the seco
     - [EST2501 — Digital Electronics](#est2501--digital-electronics)
     - [MATH1204 — Mathematical Analysis 2](#math1204--mathematical-analysis-2)
     - [MATH1409 — Linear Algebra for Artificial Intelligence](#math1409--linear-algebra-for-artificial-intelligence)
+    - [PHY1221 — Physics Lab 1](#phy1221--physics-lab-1)
     - [PHY1251H — College Physics 1](#phy1251h--college-physics-1)
   - [Repository Structure](#repository-structure)
   - [Usage](#usage)
@@ -84,6 +85,17 @@ An advanced linear algebra course tailored for AI applications, covering linear 
 | `more/fastmatrix_linux/` | A C++ accelerated matrix backend (`libfastmatrix.so`) with Python bindings and benchmark scripts |
 | `README.md` / `README_en.md` / `README_cn.md` | MatLibrary documentation in English and Chinese |
 
+### PHY1221 — Physics Lab 1
+
+Data, processing scripts, and LaTeX reports for physics laboratory experiments. 
+
+**⚠️ IMPORTANT:** The data and files in `Physics_Lab_1` **MUST NOT** be used for fabricating lab data or copying into your own lab reports. Doing so is a severe violation of academic integrity and will be considered **academic misconduct**.
+
+| Directory / File | Description |
+|---|---|
+| `Harmonic_Oscillation/` | Data, graphs, and reports for the Harmonic Oscillation experiment |
+| `Solar_Battery/` | Raw data, processing scripts, and LaTeX report for the Solar Battery experiment |
+
 ### PHY1251H — College Physics 1
 
 A calculus-based introductory physics course.
@@ -110,6 +122,9 @@ A calculus-based introductory physics course.
 │   ├── assignment4/           # Assignment 4
 │   ├── assignment5/           # Assignment 5
 │   └── midterm/               # Midterm practice problems
+├── PHY1221_Physics_Lab_1/
+│   ├── Harmonic_Oscillation/  # Harmonic Oscillation lab data and report
+│   └── Solar_Battery/         # Solar Battery lab data and report
 ├── EST2501_Digital_Electronics/
 │   ├── final.md / final.pdf   # Final exam review
 │   └── final_tex/             # LaTeX source with diagrams
@@ -140,6 +155,7 @@ A calculus-based introductory physics course.
 ## Disclaimer
 
 These materials are shared for educational and portfolio purposes.
+* **Experimental Data (`Physics_Lab_1`):** You **MUST NOT** use the raw data, processed data, scripts, or reports to fabricate your own experimental data or lab reports. Doing so is a severe violation of academic integrity and will be treated as **academic misconduct**.
 
 * **Notes:** Feel free to use these for your own revision.
 * **Code:** Please respect academic integrity. These projects represent my own work during the course and should not be plagiarized for similar assignments.
