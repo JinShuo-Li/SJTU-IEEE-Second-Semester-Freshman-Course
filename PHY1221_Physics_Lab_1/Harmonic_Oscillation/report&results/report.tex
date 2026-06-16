@@ -1,0 +1,484 @@
+
+\documentclass[UTF8,zihao=-4]{ctexart}
+\usepackage[a4paper,margin=2.25cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{siunitx}
+\hypersetup{colorlinks=false,pdfborder={0 0 0}}
+\setCJKmainfont{Noto Serif CJK SC}
+\setCJKsansfont{Noto Sans CJK SC}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.15em}
+\captionsetup{font=small,labelfont=bf}
+\sisetup{detect-all=true}
+
+\title{\bfseries 简谐振动的研究}
+\author{}
+\date{}
+
+\begin{document}
+\pagestyle{plain}
+\maketitle
+\vspace{-2.0em}
+
+\section{实验目的}
+本实验研究气垫导轨上滑块--双弹簧系统的简谐振动规律。实验目的如下：
+\begin{enumerate}[leftmargin=3em]
+  \item 用静态拉伸法测量两根弹簧的劲度系数，并得到系统等效劲度系数；
+  \item 通过周期与质量的关系测量系统等效劲度系数和弹簧有效质量修正量；
+  \item 通过最大速度与振幅的关系验证简谐振动规律，并反推劲度系数；
+  \item 通过周期与振幅的关系验证小振幅范围内周期与振幅基本无关；
+  \item 在导轨有倾角时重复周期--质量实验，分析倾角对周期关系的影响。
+\end{enumerate}
+
+\section{实验仪器}
+气垫导轨、滑块、两根弹簧、焦利氏秤、光电门、数字计时器、砝码、T 型挡光片、U 型挡光片、米尺、垫片及支柱等。
+
+\section{实验原理}
+弹簧振子在回复力满足胡克定律时有
+\begin{equation}
+  F=-kx .
+\end{equation}
+对应的运动方程为
+\begin{equation}
+  \frac{\mathrm{d}^2x}{\mathrm{d}t^2}+\omega^2x=0,
+\end{equation}
+其位移可表示为
+\begin{equation}
+  x=A\cos(\omega t+\varphi_0),
+\end{equation}
+其中 $A$ 为振幅，$\omega$ 为角频率。若运动质量为 $m$，则
+\begin{equation}
+  \omega=\sqrt{\frac{k}{m}},\qquad T=2\pi\sqrt{\frac{m}{k}} .
+\end{equation}
+
+由于弹簧自身也参与运动，实际处理周期--质量关系时引入弹簧有效质量修正量 $m_0'$。水平导轨下有
+\begin{equation}
+  T=2\pi\sqrt{\frac{M_T+M_i+m_0'}{k}},
+\end{equation}
+整理得
+\begin{equation}
+  M_T+M_i=\frac{k}{4\pi^2}T^2-m_0' .
+\end{equation}
+因此对 $M_T+M_i$ 与 $T^2$ 作线性拟合，斜率为 $a$，截距为 $b$，则
+\begin{equation}
+  k=4\pi^2a,\qquad m_0'=-b .
+\end{equation}
+
+滑块通过平衡位置时速度达到最大值，理论上
+\begin{equation}
+  v_{\max}=A\omega,
+\end{equation}
+于是
+\begin{equation}
+  v_{\max}^2=\frac{k}{M_U+m_0'}A^2 .
+\end{equation}
+实验中用 U 型挡光片的有效挡光宽度 $d$ 和挡光时间 $t$ 计算
+\begin{equation}
+  v_{\max}=\frac{d}{t} .
+\end{equation}
+对 $v_{\max}^2$ 与 $A^2$ 作线性拟合，斜率为 $c$，则
+\begin{equation}
+  k=c(M_U+m_0') .
+\end{equation}
+
+对有倾角的导轨，沿导轨方向的重力分量近似为恒力，主要改变平衡位置。设支柱间距 $l$、垫片总高度 $h$，则
+\begin{equation}
+  \sin\theta\simeq \tan\theta\simeq \frac{h}{l} .
+\end{equation}
+小振动周期仍主要由等效劲度系数和运动质量决定。
+
+\section{实验步骤}
+\begin{enumerate}[leftmargin=3em]
+  \item 调平气垫导轨，连接滑块、弹簧、光电门和计时器。
+  \item 用焦利氏秤测量两根弹簧在不同砝码质量下的长度，记录 $M_i$、$L_1$ 和 $L_2$。
+  \item 装上滑块和 T 型片，在水平导轨上改变附加质量，测量每组 10 个周期的总时间。
+  \item 换上 U 型挡光片，改变释放位置，测量通过平衡位置时的挡光时间。
+  \item 固定滑块和 T 型片，改变释放位置，测量不同振幅下的周期。
+  \item 垫高导轨一端，记录支柱位置和垫片高度，在有倾角时重复周期--质量实验。
+\end{enumerate}
+
+\section{原始数据}
+已知常量为：$M_T=120.57\,\mathrm{g}$，$M_U=129.53\,\mathrm{g}$，两根弹簧总质量 $m_0=21.74\,\mathrm{g}$，当地重力加速度 $g=9.794\,\mathrm{m/s^2}$。实验 3 中 U 型挡光片有效挡光宽度取 $d=1.010\,\mathrm{cm}=0.01010\,\mathrm{m}$。实验 3、实验 4 的平衡位置均取 $x_0=62.55\,\mathrm{cm}$。
+
+\begin{table}[H]
+\centering
+\small
+\caption{实验 1 原始数据：静态拉伸法}
+\label{tab:raw1}
+\begin{tabular}{cccc}
+\toprule
+$N$ & $M_i$/g & $L_1$/cm & $L_2$/cm \\
+\midrule
+0 & 0.00 & 25.610 & 35.402 \\
+1 & 4.82 & 27.544 & 37.452 \\
+2 & 9.50 & 29.386 & 39.500 \\
+3 & 14.20 & 31.126 & 41.506 \\
+4 & 18.96 & 33.032 & 43.468 \\
+5 & 23.57 & 34.852 & 45.550 \\
+6 & 28.35 & 36.718 & 47.546 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\small
+\caption{实验 2 原始数据：水平导轨周期--质量关系}
+\label{tab:raw2}
+\begin{tabular}{ccc}
+\toprule
+$N$ & $M_i$/g & $10T$/ms \\
+\midrule
+0 & 0.00 & 10150.1 \\
+1 & 4.82 & 10340.0 \\
+2 & 9.50 & 10522.9 \\
+3 & 14.20 & 10699.9 \\
+4 & 18.96 & 10876.8 \\
+5 & 23.57 & 11046.9 \\
+6 & 28.35 & 11220.4 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\small
+\caption{实验 3 原始数据：最大速度--振幅关系}
+\label{tab:raw3}
+\begin{tabular}{ccc}
+\toprule
+$N$ & $x'$/cm & $t$/ms \\
+\midrule
+0 & 70.00 & 24.74 \\
+1 & 75.00 & 13.57 \\
+2 & 80.00 & 9.94 \\
+3 & 85.00 & 7.62 \\
+4 & 90.00 & 6.26 \\
+5 & 95.00 & 5.28 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\small
+\caption{实验 4 原始数据：周期--振幅关系}
+\label{tab:raw4}
+\begin{tabular}{ccc}
+\toprule
+$N$ & $x'$/cm & $10T$/ms \\
+\midrule
+0 & 70.00 & 10143.5 \\
+1 & 75.00 & 10143.2 \\
+2 & 80.00 & 10145.7 \\
+3 & 85.00 & 10146.6 \\
+4 & 90.00 & 10147.0 \\
+5 & 95.00 & 10146.9 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\small
+\caption{实验 5 原始数据：有倾角时周期--质量关系}
+\label{tab:raw5}
+\begin{tabular}{ccc}
+\toprule
+$N$ & $M_i$/g & $10T$/ms \\
+\midrule
+0 & 0.00 & 10145.4 \\
+1 & 4.82 & 10335.3 \\
+2 & 9.50 & 10516.5 \\
+3 & 14.20 & 10696.2 \\
+4 & 18.96 & 10875.0 \\
+5 & 23.57 & 11041.9 \\
+6 & 28.35 & 11215.6 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{数据处理与结果}
+
+\subsection{实验 1：静态拉伸法测量弹簧劲度系数}
+取 $N=0$ 时的长度为原长，得
+\begin{equation}
+  L_{10}=25.610\,\mathrm{cm},\qquad L_{20}=35.402\,\mathrm{cm} .
+\end{equation}
+由 $x_1=L_1-L_{10}$、$x_2=L_2-L_{20}$ 计算伸长量，并由 $F=M_ig$ 计算拉力。处理数据见表 \ref{tab:proc1}。
+
+\begin{table}[H]
+\centering
+\small
+\caption{实验 1 处理数据}
+\label{tab:proc1}
+\begin{tabular}{cccc}
+\toprule
+$N$ & $x_1$/m & $x_2$/m & $F$/N \\
+\midrule
+0 & 0.00000 & 0.00000 & 0.00000 \\
+1 & 0.01934 & 0.02050 & 0.04721 \\
+2 & 0.03776 & 0.04098 & 0.09304 \\
+3 & 0.05516 & 0.06104 & 0.13907 \\
+4 & 0.07422 & 0.08066 & 0.18569 \\
+5 & 0.09242 & 0.10148 & 0.23084 \\
+6 & 0.11108 & 0.12144 & 0.27766 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+对弹簧 1 和弹簧 2 分别作线性拟合，得到
+\begin{align}
+  F &= 2.506122x_1 -5.448439e-04,\qquad R^2=0.999934,\\
+  F &= 2.284358x_2 +2.268882e-05,\qquad R^2=0.999939.
+\end{align}
+因此
+\begin{equation}
+  k_1=2.5061\,\mathrm{N/m},\qquad
+  k_2=2.2844\,\mathrm{N/m},
+\end{equation}
+系统静态法等效劲度系数为
+\begin{equation}
+  k_{static}=k_1+k_2=4.7905\,\mathrm{N/m} .
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.72\textwidth]{exp1_spring1_fit.pdf}
+  \caption{弹簧 1 静态拉伸拟合图}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.72\textwidth]{exp1_spring2_fit.pdf}
+  \caption{弹簧 2 静态拉伸拟合图}
+\end{figure}
+
+\subsection{实验 2：周期与质量关系}
+单个周期由 $T=(10T)/10$ 得到，总运动质量取 $M=M_T+M_i$。处理数据见表 \ref{tab:proc2}。
+
+\begin{table}[H]
+\centering
+\small
+\caption{实验 2 处理数据}
+\label{tab:proc2}
+\begin{tabular}{cccc}
+\toprule
+$N$ & $M_T+M_i$/kg & $T$/s & $T^2$/s$^2$ \\
+\midrule
+0 & 0.12057 & 1.01501 & 1.03025 \\
+1 & 0.12539 & 1.03400 & 1.06916 \\
+2 & 0.13007 & 1.05229 & 1.10731 \\
+3 & 0.13477 & 1.06999 & 1.14488 \\
+4 & 0.13953 & 1.08768 & 1.18305 \\
+5 & 0.14414 & 1.10469 & 1.22034 \\
+6 & 0.14892 & 1.12204 & 1.25897 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+对 $M_T+M_i$ 与 $T^2$ 作线性拟合，得到
+\begin{equation}
+  M_T+M_i=0.124035T^2 -0.007232,\qquad R^2=0.999995.
+\end{equation}
+于是
+\begin{equation}
+  k_{period}=4\pi^2a=4.8967\,\mathrm{N/m},\qquad
+  m_0'=-b=0.007232\,\mathrm{kg}=7.232\,\mathrm{g} .
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.72\textwidth]{exp2_period_mass_fit.pdf}
+  \caption{水平导轨下周期平方与质量关系拟合图}
+\end{figure}
+
+\subsection{实验 3：最大速度与振幅关系}
+振幅由 $A=|x'-x_0|$ 得到，最大速度由 $v_{\max}=d/t$ 得到。处理数据见表 \ref{tab:proc3}。
+
+\begin{table}[H]
+\centering
+\footnotesize
+\caption{实验 3 处理数据}
+\label{tab:proc3}
+\begin{tabular}{cccccc}
+\toprule
+$N$ & $A$/m & $t$/s & $v_{max}$/m s$^{-1}$ & $A^2$/m$^2$ & $v_{max}^2$/m$^2$s$^{-2}$ \\
+\midrule
+0 & 0.07450 & 0.02474 & 0.40825 & 0.005550 & 0.16666 \\
+1 & 0.12450 & 0.01357 & 0.74429 & 0.015500 & 0.55397 \\
+2 & 0.17450 & 0.00994 & 1.01610 & 0.030450 & 1.03245 \\
+3 & 0.22450 & 0.00762 & 1.32546 & 0.050400 & 1.75684 \\
+4 & 0.27450 & 0.00626 & 1.61342 & 0.075350 & 2.60312 \\
+5 & 0.32450 & 0.00528 & 1.91288 & 0.105300 & 3.65911 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+对 $v_{\max}^2$ 与 $A^2$ 作线性拟合，得到
+\begin{equation}
+  v_{\max}^2=34.835143A^2 -0.011762,\qquad R^2=0.999836.
+\end{equation}
+用实验 2 得到的 $m_0'$ 修正运动质量，得
+\begin{equation}
+  k_{velocity}=34.835143\,(M_U+m_0')=4.7641\,\mathrm{N/m} .
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.72\textwidth]{exp3_velocity_amplitude_fit.pdf}
+  \caption{最大速度平方与振幅平方关系拟合图}
+\end{figure}
+
+\subsection{实验 4：周期与振幅关系}
+实验 4 使用滑块和 T 型片，质量取 $M_T=120.57\,\mathrm{g}$。振幅由 $A=|x'-x_0|$ 得到，周期由 $T=(10T)/10$ 得到。处理数据见表 \ref{tab:proc4}。
+
+\begin{table}[H]
+\centering
+\small
+\caption{实验 4 处理数据}
+\label{tab:proc4}
+\begin{tabular}{ccc}
+\toprule
+$N$ & $A$/m & $T$/s \\
+\midrule
+0 & 0.07450 & 1.01435 \\
+1 & 0.12450 & 1.01432 \\
+2 & 0.17450 & 1.01457 \\
+3 & 0.22450 & 1.01466 \\
+4 & 0.27450 & 1.01470 \\
+5 & 0.32450 & 1.01469 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+对 $T$ 与 $A$ 作线性拟合，得到
+\begin{equation}
+  T=0.001674A +1.014214,\qquad R^2=0.831561.
+\end{equation}
+周期平均值为
+\begin{equation}
+  \bar T=1.014548\,\mathrm{s},
+\end{equation}
+标准差为 $0.000172\,\mathrm{s}$，最大值与最小值的差占平均周期的比例为 $0.0375\%$。可见在本实验振幅范围内，周期仅有很小变化，基本符合简谐振动周期与振幅无关的结论。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.72\textwidth]{exp4_period_amplitude.pdf}
+  \caption{周期与振幅关系图}
+\end{figure}
+
+\subsection{实验 5：有倾角时的周期与质量关系}
+支柱间距为
+\begin{equation}
+  l=x_2-x_1=(117.98-31.80)\,\mathrm{cm}=86.18\,\mathrm{cm} .
+\end{equation}
+由 $h=2.102\,\mathrm{cm}$ 得
+\begin{equation}
+  \sin\theta\simeq \frac{h}{l}=0.024391,\qquad
+  \theta=0.024393\,\mathrm{rad}=1.398^\circ .
+\end{equation}
+周期--质量关系的处理方式与实验 2 相同，处理数据见表 \ref{tab:proc5}。
+
+\begin{table}[H]
+\centering
+\small
+\caption{实验 5 处理数据}
+\label{tab:proc5}
+\begin{tabular}{cccc}
+\toprule
+$N$ & $M_T+M_i$/kg & $T$/s & $T^2$/s$^2$ \\
+\midrule
+0 & 0.12057 & 1.01454 & 1.02929 \\
+1 & 0.12539 & 1.03353 & 1.06818 \\
+2 & 0.13007 & 1.05165 & 1.10597 \\
+3 & 0.13477 & 1.06962 & 1.14409 \\
+4 & 0.13953 & 1.08750 & 1.18266 \\
+5 & 0.14414 & 1.10419 & 1.21924 \\
+6 & 0.14892 & 1.12156 & 1.25790 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+线性拟合结果为
+\begin{equation}
+  M_T+M_i=0.123997T^2 -0.007071,\qquad R^2=0.999994.
+\end{equation}
+于是
+\begin{equation}
+  k_{incline}=4\pi^2a'=4.8952\,\mathrm{N/m},\qquad
+  m_{0,\,incline}'=-b'=0.007071\,\mathrm{kg}=7.071\,\mathrm{g} .
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.72\textwidth]{exp5_incline_period_mass_fit.pdf}
+  \caption{有倾角时周期平方与质量关系拟合图}
+\end{figure}
+
+\subsection{结果汇总}
+\begin{table}[H]
+\centering
+\footnotesize
+\caption{主要拟合结果汇总}
+\label{tab:summary}
+\begin{tabular}{p{3.0cm}p{5.2cm}cp{5.0cm}}
+\toprule
+项目 & 拟合式 & $R^2$ & 物理结果 \\
+\midrule
+静态拉伸法：弹簧1 & $F=2.506122x-5.448439e-04$ & 0.999934 & $k_1=2.5061$ N/m \\
+静态拉伸法：弹簧2 & $F=2.284358x+2.268882e-05$ & 0.999939 & $k_2=2.2844$ N/m \\
+静态法等效值 & - & - & $k_{static}=4.7905$ N/m \\
+周期-质量法 & $M=0.124035T^2-0.007232$ & 0.999995 & $k_{period}=4.8967$ N/m; $m_0'=7.232$ g \\
+速度-振幅法 & $v_{max}^2=34.835143A^2-0.011762$ & 0.999836 & $k_{velocity}=4.7641$ N/m \\
+周期-振幅关系 & $T=0.001674A+1.014214$ & 0.831561 & $\bar T=1.014548$ s \\
+有倾角周期-质量法 & $M=0.123997T^2-0.007071$ & 0.999994 & $k_{incline}=4.8952$ N/m; $m_{0,incline}'=7.071$ g \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{误差分析}
+以静态拉伸法得到的 $k_{static}=4.7905\,\mathrm{N/m}$ 为参考，计算相对误差：
+\begin{align}
+  \delta_{period}&=\frac{|k_{period}-k_{static}|}{k_{static}}\times100\%=2.218\%,\\
+  \delta_{velocity}&=\frac{|k_{velocity}-k_{static}|}{k_{static}}\times100\%=0.550\%,\\
+  \delta_{incline}&=\frac{|k_{incline}-k_{static}|}{k_{static}}\times100\%=2.186\%.
+\end{align}
+
+主要误差来源包括：
+\begin{enumerate}[leftmargin=3em]
+  \item 静态拉伸法中，弹簧长度读数、焦利氏秤零点与砝码质量会影响 $F-x$ 拟合斜率；
+  \item 周期测量中，释放时若存在横向扰动或振幅过大，会使实际运动偏离理想简谐振动；
+  \item 光电门测速中，U 型挡光片有效宽度的测量误差和滑块通过光电门时的姿态误差会直接影响 $v_{\max}$；
+  \item 弹簧并非理想轻弹簧，且两根弹簧连接和受力方向可能存在细小不对称；
+  \item 有倾角实验中，导轨倾角会改变平衡位置，若重新调整平衡位置不充分，会带来周期测量的系统偏差。
+\end{enumerate}
+
+实验 2 得到的 $m_0'=7.232\,\mathrm{g}$，约为两根弹簧总质量 $m_0=21.74\,\mathrm{g}$ 的 $33.27\%$。该比例接近理想弹簧有效质量为弹簧总质量约三分之一的常见量级，因此结果较为合理。
+
+\section{结果讨论}
+由实验 1 可知，两根弹簧的劲度系数分别为 $2.5061\,\mathrm{N/m}$ 和 $2.2844\,\mathrm{N/m}$，等效劲度系数为 $4.7905\,\mathrm{N/m}$。实验 2 的周期--质量拟合 $R^2=0.999995$，说明 $M_T+M_i$ 与 $T^2$ 呈现高度线性关系，符合理论模型。
+
+实验 3 中 $v_{\max}^2$ 与 $A^2$ 的拟合 $R^2=0.999836$，说明最大速度与振幅近似成正比，符合简谐振动在平衡位置速度最大的规律。由速度法得到的 $k_{velocity}=4.7641\,\mathrm{N/m}$ 与静态法结果的相对差异为 $0.550\%$，一致性较好。
+
+实验 4 中，振幅从 $0.0745\,\mathrm{m}$ 增加到 $0.3245\,\mathrm{m}$，周期极差占平均值仅为 $0.0375\%$。因此在该振幅范围内，周期随振幅变化不明显，验证了简谐振动周期主要由劲度系数和运动质量决定。
+
+实验 5 中导轨倾角为 $1.398^\circ$。有倾角时得到的 $k_{incline}=4.8952\,\mathrm{N/m}$，与水平导轨周期法得到的 $k_{period}=4.8967\,\mathrm{N/m}$ 相差 $0.031\%$。这表明小倾角引入的沿导轨恒定重力分量主要改变平衡位置，对小振动周期--质量关系的斜率影响很小。
+
+\section{实验结论}
+\begin{enumerate}[leftmargin=3em]
+  \item 静态拉伸法得到 $k_1=2.5061\,\mathrm{N/m}$，$k_2=2.2844\,\mathrm{N/m}$，系统等效劲度系数 $k_{static}=4.7905\,\mathrm{N/m}$。
+  \item 水平导轨周期--质量法得到 $k_{period}=4.8967\,\mathrm{N/m}$，弹簧有效质量修正量 $m_0'=7.232\,\mathrm{g}$。
+  \item 最大速度--振幅法得到 $k_{velocity}=4.7641\,\mathrm{N/m}$，并验证了 $v_{\max}^2$ 与 $A^2$ 的线性关系。
+  \item 周期--振幅实验中周期平均值为 $1.014548\,\mathrm{s}$，周期变化极小，说明小振幅范围内周期基本不依赖振幅。
+  \item 有倾角时得到 $k_{incline}=4.8952\,\mathrm{N/m}$，与水平导轨周期法结果基本一致，说明小倾角主要改变平衡位置，对周期--质量关系的斜率影响不显著。
+\end{enumerate}
+
+\end{document}
